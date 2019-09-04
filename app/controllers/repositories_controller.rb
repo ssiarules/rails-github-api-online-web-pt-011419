@@ -11,4 +11,3 @@ class RepositoriesController < ApplicationController
   end
 
 end
-
