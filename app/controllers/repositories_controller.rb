@@ -6,8 +6,9 @@ class RepositoriesController < ApplicationController
    # don't forget that pesky v param for versioning
    req.params['v'] = '20160201'
  end
- @friends = JSON.parse(resp.body)["response"]["friends"]["items"]
+ @user = JSON.parse(resp.body)["response"]["user"]["items"]
  render 'friends'
   end
 
 end
+
